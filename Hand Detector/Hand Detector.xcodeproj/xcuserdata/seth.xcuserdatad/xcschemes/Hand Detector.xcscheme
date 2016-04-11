@@ -61,6 +61,12 @@
             ReferencedContainer = "container:Hand Detector.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "/Users/seth_backup/Developer/Hand-Detector/Base_Images/SpreadFingers.jpg"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

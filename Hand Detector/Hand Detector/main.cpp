@@ -13,9 +13,17 @@
 #include <opencv2/objdetect/objdetect.hpp>
 #include <opencv2/features2d/features2d.hpp>
 
+using namespace cv;
+
+
 int main(int argc, const char * argv[])
 {
-  // insert code here...
-  std::cout << "Hello, World!\n";
-    return 0;
+  cv::Mat inputImage = cv::imread(argv[1]);
+  cv::resize(inputImage, inputImage, Size(720,480));
+  cv::imshow("Hello, world!", inputImage);
+  cv::cvtColor(inputImage, inputImage, CV_BGR2GRAY);
+  Canny(inputImage,inputImage,100,200);
+  imshow("Canny", inputImage);
+  waitKey(0);
+  return 0;
 }
